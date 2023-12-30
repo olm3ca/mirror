@@ -42,8 +42,8 @@ There are several hardware revisions made to the Mirror.
 ### Hardware-based solution
 To make the Mirror function as an enhanced smart mirror, we will need to circumvent the proprietary scalar board's LVDS connection by using a programmable TV board that is easily sourced online, and re-mapping the LVDS pins to reconfigure the Mirror's layout with our new board. Here is what we will need:
 - A programmable TV board such as [this model](https://www.ebay.com/itm/126199255216)
-- 3.3v regulators such as [this option](https://www.amazon.com/Pieces-AMS1117-3-3-4-75V-12V-Voltage-Regulator/dp/B08CDMZMDN/ref=sr_1_1_sspa)
-- 1.5K ohm Resistors such as [this option](https://www.amazon.com/EDGELEC-Resistor-Tolerance-Multiple-Resistance/dp/B07QK3LHL9?th=1) 
+- 3.3v regulators such as [this option](https://www.amazon.com/Pieces-AMS1117-3-3-4-75V-12V-Voltage-Regulator/dp/B08CDMZMDN/ref=sr_1_1_sspa). It is most likely that we are going to have to provide a 3.3v signal to a specific pin. sometimes the driver boards like the one you ordered provide a pin for such things, sometimes they don't. 
+- 1.5K ohm Resistors such as [this option](https://www.amazon.com/EDGELEC-Resistor-Tolerance-Multiple-Resistance/dp/B07QK3LHL9?th=1). we will need to add some resistors in line for 4 of the wires. you'll need at least 4 resistors. The important thing to look for is the tolerance which will be represented as a percentage. We need precision, so get 1% tolerance.
 
 ### Steps to repin 
 This is a reference guide for how we went about discovering the pin layouts:
@@ -53,7 +53,7 @@ Now for a quick definition of terms so we're both speaking the same language. We
 - The twisted wires simply as "Twisted pairs"
 - The black wires as grounds (This is an assumption, will update if discovered to have a different purpose after your testing)
 
-Now, On to the pin assignment. What we're looking for: if you can find the datasheet for the board you purchased, We'll be re-pinning the housing to match to that header. if you give me the model number and make a note of the markings on the large chip at the center of the board, I can help you look.
+Now, On to the pin assignment. What we're looking for: we will reference the datasheet for the programmable TV board linked above, or any other model you are using.
 
 Where to start:
 - Take the panel side connector and hold it with the same side up as it is when it is inserted into the panel, so the gold side of the pins is facing toward you. (the cluster of 6 black wires will be on the right) going left to right from 1 to 51, use the multimeter set to continuity mode to figure out what pin positions on the panel side map to the pins on the housing side.
@@ -69,14 +69,11 @@ Where to start:
 
 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30
 
-- The panel side connector will be a pain in the butt, I'd recommend taping a sewing needle to the end of your probe to give you that finer tip. once you've got those mapped out, hit me back with the findings so i can perform a sanity check to make sure everything looks good, and if we've found the datasheet for the driver board you purchased by then i'll provide a diagram for how to remap the housing!
+- The panel side connector is more challenging, I'd recommend taping a sewing needle to the end of your probe to give you that finer tip. once you've got those mapped out, hit me back with the findings so i can perform a sanity check to make sure everything looks good, and if we've found the datasheet for the driver board you purchased by then i'll provide a diagram for how to remap the housing!
 
-Some thoughts: It is most likely that we are going to have to provide a 3.3v signal to a specific pin. sometimes the driver boards like the one you ordered provide a pin for such things, sometimes they don't. If you're in a hurry to get things moving along, you can order something similar to this just in case. If you're interested in electronics you'll eventually get some good use out of them as a lot of logic is driven at 3.3v so. if not you can always find a smaller batch.
+- Next, As far as the header housings go. it can be a challenge to try to move the pins around while some of the sockets are populated. It is advised to buy another housing so you can just move from one to the other. The best way to do this to ensure that the pins will fit is to read the side of your current housing to determine the manufacturer and model.
 
-In the same spirit, it might be that we will need to add some resistors in line for 4 of the wires. we won't know until we try it. so, if you don't want to be left waiting again, you'll need at least 4 of these
 
-Once again, buy only as much as you feel like, the important thing to look for is the tolerance which will be represented as a percentage. We need precision, so get 1% tolerance.
-
-Next, As far as the header housings go. it can be a pain in the butt trying to move the pins around while some of the sockets are populated. It is advised to buy another housing so you can just move from one to the other. The best way to do this to ensure that the pins will fit is to read the side of your current housing to determine the manufacturer and model. lemme know if you need any further advice on this.
+END of current steps - progress ongoing... 
 
 
