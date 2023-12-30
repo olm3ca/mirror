@@ -31,7 +31,7 @@ We will be able to keep the same psu, backlight inverter, control boards(volume 
 
 | Scalar Board front | Scalar board LVDS | Scalar board back | 
 |------------|-------------|------------|
-|<img src="https://github.com/olm3ca/mirror/blob/1236c9e7ffa5e38db7e17624a2214aead6a7a62e/Mirror1.jpeg" width="300">| <img src="https://github.com/olm3ca/mirror/blob/a65189c9abd922f255444152f49e3ef9d3d22f38/Mirror%202.jpg" width="300">| <img src="https://github.com/olm3ca/mirror/blob/a65189c9abd922f255444152f49e3ef9d3d22f38/Mirror%203.jpg" width="300">|
+|<img src="https://github.com/olm3ca/mirror/blob/1236c9e7ffa5e38db7e17624a2214aead6a7a62e/Mirror1.jpeg" width="300">| <img src="https://github.com/olm3ca/mirror/blob/fac28bf8ac4261a449fda05f3c602d53389d4e51/Mirror2.jpeg" width="300">| <img src="https://github.com/olm3ca/mirror/blob/fac28bf8ac4261a449fda05f3c602d53389d4e51/Mirror3.jpeg" width="300">|
 
 ### Versions
 There are several hardware revisions made to the Mirror. 
