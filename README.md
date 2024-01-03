@@ -73,6 +73,8 @@ Where to start:
 
 - Next, As far as the header housings go. it can be a challenge to try to move the pins around while some of the sockets are populated. It is advised to buy another housing so you can just move from one to the other. The best way to do this to ensure that the pins will fit is to read the side of your current housing to determine the manufacturer and model.
 
+Pin layout: 
+|<img src="https://github.com/olm3ca/mirror/blob/daf329cbb0cf395875f02888d6d37f5fbbeca670/PINs.png">
 
 END of current steps - progress ongoing... 
 
