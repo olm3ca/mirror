@@ -76,6 +76,22 @@ Where to start:
 Pin layout: 
 |<img src="PIN.png">
 
+Now to remap the pins.
+
+- For panel side 22, 23, 37 and 38: Note(3) Input mode 10bit setting & 8bit input E_Chanel : Keep Level ‘0’
+
+`Pin No 22 / 37 Pull Up(3.3V) with 1.5k ohm resistor`
+
+`Pin No 23 / 38 Pull Down(GND) with 1.5k ohm resistor`
+
+- For panel side pin 45: page 16 of the datasheet, it's signal description is "LVDS_SEL (2)" the paranthesis indicate which note applies. Note(2) LVDS Option :
+
+`High(3.3V) Normal NS LVDS format`
+`Low(GND or N.C) JEIDA LVDS format`
+
+The panel defaults to jeida, we need to set it to normal lvds (aka vesa). 
+
+
 END of current steps - progress ongoing... 
 
 
