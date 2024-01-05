@@ -21,7 +21,12 @@ Now that the company has started to abandon the product, it's time to open it up
 ### Hardware notes:
 We will be able to keep the same psu, backlight inverter, control boards, power switch etc. and speakers. 
 -  43” full HD 1080p IPS display, with 178° wide viewing angle
--  My Panel is a [BOE DV430FHM-NN5](https://www.panelook.com/DV430FHM-NN5_BOE_43_LCM_overview_48245.html) which is the same panel as this [HV430FHB-N10](https://www.panelook.com/HV430FHB-N10_BOE_43_CELL_overview_30568.html). 
+-  My Panel is a [BOE DV430FHM-NN5](https://www.panelook.com/DV430FHM-NN5_BOE_43_LCM_overview_48245.html) which is the same panel as this [HV430FHB-N10](https://www.panelook.com/HV430FHB-N10_BOE_43_CELL_overview_30568.html). The good news is, this panel is used in several TVs made by Vizio, ONN and Samsung.
+
+For this panel to work, we just need the mainboard from a TV that used this panel. 
+
+Other models of the Mirror have different panels: 
+
 -  Many users have a Samsung LTI400HN01 [full specs](https://www.panelook.com/LTI400HN01_Samsung_40_LCM_parameter_31646.html) and [datasheet](SMSNG41.pdf) connected via LVDS
 -  Some users have the [LM40SAMFHD700AG25WV Panel](https://www.panelook.com/LM40SAMFHD700AG25WV-40-TFT-Liquid-Crystal-Display-module-with-LED-Backlight-unit-detail_155306.html) and [datasheet](https://www.panelook.com/upload/product/210800/202302093705.pdf)
 -  LED Backlight, picture-in-picture functionality
@@ -40,7 +45,7 @@ There are several hardware revisions made to the Mirror.
 - User r/themiggysmigs provided these photos: https://imgur.com/a/uST7AOL
 - RevP1 User r/AYfD6PsXcndUxSfobkM9 photos: https://imgur.com/a/bHYqefX | https://imgur.com/a/3JF6CdK | https://imgur.com/a/gHpoa2T
 
-### Hardware-based solution
+### Older model Mirrors (not relevant if you have a BOE panel):
 To make the Mirror function as an enhanced smart mirror, we will need to circumvent the proprietary scalar board's LVDS connection by using a programmable TV board that is easily sourced online, and re-mapping the LVDS pins to reconfigure the Mirror's layout with our new board. Here is what we will need:
 - A programmable TV board such as [this model](https://www.ebay.com/itm/126199255216)
 - 3.3v regulators such as [this option](https://www.amazon.com/Pieces-AMS1117-3-3-4-75V-12V-Voltage-Regulator/dp/B08CDMZMDN/ref=sr_1_1_sspa). It is most likely that we are going to have to provide a 3.3v signal to a specific pin. sometimes the driver boards like the one you ordered provide a pin for such things, sometimes they don't. 
