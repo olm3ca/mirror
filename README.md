@@ -21,6 +21,7 @@ Now that the company has started to abandon the product, it's time to open it up
 ### Hardware notes:
 We will be able to keep the same psu, backlight inverter, control boards (volume buttons, power switch etc.) and speakers. 
 -  43” full HD 1080p IPS display, with 178° wide viewing angle
+-  My Panel is the BOE DV430FHM-NN5 model, [full specs](https://www.panelook.com/DV430FHM-NN5_BOE_43_LCM_overview_48245.html)
 -  Panel: Most users have a Samsung LTI400HN01 [full specs](https://www.panelook.com/LTI400HN01_Samsung_40_LCM_parameter_31646.html) and [datasheet](SMSNG41.pdf) connected via LVDS
 -  Some users have the successor to the Samsung Panel [LM40SAMFHD700AG25WV](https://www.panelook.com/LM40SAMFHD700AG25WV-40-TFT-Liquid-Crystal-Display-module-with-LED-Backlight-unit-detail_155306.html) and [datasheet](https://www.panelook.com/upload/product/210800/202302093705.pdf)
 -  LED Backlight, picture-in-picture functionality
