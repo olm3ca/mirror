@@ -42,7 +42,7 @@ What we don't need:
 
 | Scalar Board front | Scalar board LVDS | Scalar board back | 
 |------------|-------------|------------|
-|<img src="rev08/Scalar1.jpeg" width="300">| <img src="rev08/Scalar2.jpeg" width="300">| <img src="rev08/Scalar3.jpeg" width="300">|
+|<img src="rev08/Scalar1.jpeg" width="300">| <img src="rev08/Scalar_2.jpeg" width="300">| <img src="rev08/Scalar_3.jpeg" width="300">|
 
 ### Hardware Versions
 There are several hardware revisions made to the Mirror. 
