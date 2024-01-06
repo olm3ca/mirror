@@ -42,7 +42,7 @@ What we don't need:
 
 | Scalar Board front | Scalar board LVDS | Scalar board back | 
 |------------|-------------|------------|
-|<img src="https://github.com/olm3ca/mirror/blob/1236c9e7ffa5e38db7e17624a2214aead6a7a62e/Mirror1.jpeg" width="300">| <img src="https://github.com/olm3ca/mirror/blob/fac28bf8ac4261a449fda05f3c602d53389d4e51/Mirror2.jpeg" width="300">| <img src="https://github.com/olm3ca/mirror/blob/fac28bf8ac4261a449fda05f3c602d53389d4e51/Mirror3.jpeg" width="300">|
+|<img src="rev08/Scalar1.jpeg" width="300">| <img src="rev08/Scalar2.jpeg" width="300">| <img src="rev08/Scalar3.jpeg" width="300">|
 
 ### Hardware Versions
 There are several hardware revisions made to the Mirror. 
