@@ -1,7 +1,7 @@
 ## Creating a Smart Mirror from a Lululemon Mirror
 Now that the company has started to abandon the product, it's time to open it up and make it a more functional smart mirror.
 
-Note: If you have a newer model Mirror (my unit is Rev08, ordered November 2022), the good news is you may have a BOE display which is the same display used in many TVs from Vizio, ONN and Samsung. This guide is primarily dedicated to that model as it is very easy to place a TV motherboard into the Mirror to display whatever you want.
+Note: If you have a newer model Mirror (my unit is Rev08, ordered November 2022), the good news is you may have a BOE display which is the same display used in many TVs from Vizio, ONN and Samsung. This guide is primarily dedicated to that model as it is very easy to place a TV mainboard into the Mirror to display whatever you want.
 
 To check, simply lay down your Mirror, unscrew the base (if used) and four screws on the back side. Lift up the metal case and look for BOE, as shown below where the red circle is:
 
