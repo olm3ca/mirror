@@ -1,7 +1,9 @@
 # Creating a Smart Mirror from a Lululemon Mirror
-Now that the company has started to abandon the product, it's time to open it up and make it a more functional smart mirror. The process has been documented below, and you can watch a full tutorial video linked below.
+The Lululemon Mirror is a two-way mirror with a display panel behind it, designed for workout videos and was recently [announced](https://www.theverge.com/2023/9/27/23893249/lululemon-mirror-peloton-connected-fitness) as a discontinued product by the company. We wanted to repurpose this hardware to make it a more functional smart mirror. The process has been documented below, with a full tutorial video to demonstrate the steps followed.
       
-<img src="rev08/Mirror%20Complete.jpg">
+| MagicMirror | Mainboard | System & Audio | 
+|------------|-------------|------------|
+|<img src="rev08/SmartMirror1.jpg" width="300">| <img src="rev08/SmartMirror2.jpg" width="300">| <img src="rev08/SmartMirror3.jpg" width="300">|
 
 Note: If you have a newer model Mirror (my unit is Rev08, ordered November 2022), the good news is you may have a BOE display which is the same display used in many TVs from Vizio, ONN and Samsung. This guide is primarily dedicated to that model as it is very easy to place a TV mainboard into the Mirror to display whatever you want.
 
@@ -9,7 +11,7 @@ To check, simply lay down your Mirror, unscrew the base (if used) and four screw
 
 <img src="Mirror.jpg" width="900">
 
-If your Mirror is a BOE display, read below for an easy solution. If you have Samsung or any other display, the steps to work with your panel is still a work in progress. 
+If your Mirror is a BOE display, read below for the solution we developed. If you have Samsung or any other display, the steps to work with your panel is still a work in progress - see [this](https://github.com/olm3ca/mirror/blob/main/Other%20models.md) for more details.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Before you begin, 
