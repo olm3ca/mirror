@@ -1,5 +1,7 @@
-## Creating a Smart Mirror from a Lululemon Mirror
-Now that the company has started to abandon the product, it's time to open it up and make it a more functional smart mirror.
+# Creating a Smart Mirror from a Lululemon Mirror
+Now that the company has started to abandon the product, it's time to open it up and make it a more functional smart mirror. The process has been documented below, and you can watch a full tutorial video linked below.
+      
+<img src="rev08/Mirror%20Complete.jpg">
 
 Note: If you have a newer model Mirror (my unit is Rev08, ordered November 2022), the good news is you may have a BOE display which is the same display used in many TVs from Vizio, ONN and Samsung. This guide is primarily dedicated to that model as it is very easy to place a TV mainboard into the Mirror to display whatever you want.
 
@@ -22,29 +24,26 @@ The process described in this document could cause irreversible damage to your M
 - [Project Goals](#project-goals)
 - [Hardware Versions](#hardware-versions)
 - [Method](#method)
-- [Other Mirror Models](#other-mirrors)
-- [Steps to Repin LVDS](#how-to-repin)
-- [Accessories](#accessories)
+- [Step 1](#step-1)
+- [Step 2](#step-2)
+- [Step 3](#step-3)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### Project Goals:
-The goal is to allow the Mirror to accept other connections via HDMI. This could be a rasberry pi or other streaming device. For my Mirror, I want to use [Magic Mirror](https://magicmirror.builders/) using a small computer like a pi to fit inside the Mirror. I also want to keep the same psu, backlight inverter, control boards, power switch etc. and speakers. 
+## Project Goals:
+The goal is to enhance the Mirror to run other software and to make it a more robust smart mirror. I wanted to use [Magic Mirror](https://magicmirror.builders/) using a small computer inside the Mirror, plus the ability to stream any music and videos that I want to. 
 
 -  43” full HD 1080p IPS display, with 178° wide viewing angle
 -  LED Backlight, picture-in-picture functionality
 -  The inverter and the power supply can be reused with no modifications
+-  The backlight inverter and speakers can be reused to work with the new system 
 
 What we don't need: 
 -  Mirror Software: Android-based OS, proprietary launcher. Without any way to jailbreak this system, it isn't very useful to us. 
 -  Camera: Unlikely to work post-modification. mipi csi interface, to get that to work for lulu required an entire team of engineers quite a bit of time and consideration in order to get that exactly how they wanted it.
--  The scalar board (with hdmi, usb and the antennas) would require reverse engineering the bios, very challenging. 
+-  The scalar board (with hdmi, usb and the antennas) would require reverse engineering the bios, which is very challenging. It will continue to work for the backlight and other minor functionality only. 
 
-| Scalar Board front | Scalar board LVDS | Scalar board back | 
-|------------|-------------|------------|
-|<img src="rev08/Scalar1.jpeg" width="300">| <img src="rev08/Scalar_2.jpeg" width="300">| <img src="rev08/Scalar_3.jpeg" width="300">|
-
-### Hardware Versions
+## Hardware Versions
 There are several hardware revisions made to the Mirror. 
 - Mine is Rev08, ordered November 2022. Photos uploaded to this repo are my own.
 - My Panel is a [BOE DV430FHM-NN5](https://www.panelook.com/DV430FHM-NN5_BOE_43_LCM_overview_48245.html) which is the same panel as this [HV430FHB-N10](https://www.panelook.com/HV430FHB-N10_BOE_43_CELL_overview_30568.html). The good news is, this panel is used in several TVs made by Vizio, ONN and Samsung.
@@ -56,74 +55,81 @@ Other models of the Mirror have different panels:
 - User r/themiggysmigs provided these photos: https://imgur.com/a/uST7AOL
 - RevP1 User r/AYfD6PsXcndUxSfobkM9 photos: https://imgur.com/a/bHYqefX | https://imgur.com/a/3JF6CdK | https://imgur.com/a/gHpoa2T
 
-### Method
-What you'll need: A Phillips head screwdriver, TR10, TR6 screwdrivers, a replacement TV mainboard, and whatever device you want to control the new Mirror (such as a Rasperry Pi, chromecast, a computer, or anything else).  
+## Method
+What you'll need: A Phillips head screwdriver, TR10 and TR6 screwdrivers, wire cutters, a replacement TV mainboard, and whatever device you want to control the new Mirror (such as a Rasperry Pi, chromecast, a computer, or anything else). 
 
-To make the Mirror display other content, follow these steps:
-- Use a Phillips head screwdriver to remove the 4 screws on the back of the Mirror (and the 4 securing the bottom stand, if used). 
-- Unscrew the scalar board: TR10 - three screws connecting it to the plastic frame from the Mirror. Then, use a TR6 for five screws to remove the board from the plastic shield.
-- Disconnect the LVDS cable from the scalar board and the panel.
-- Disconnect the audio from the scalar board as well. The speakers will still be connected to power, but we'll connect them to the new mainboard for audio output.
-- Replace the scalar board with the TR6 and TR10 screws.
-- The BOE display will work with a TV mainboard from any HV430FHB-N10 television hardware. [A quick search on eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2332490.m570.l1313&_nkw=HV430FHB-N10&_sacat=0) provides for many options. Note: you will want a mainboard that comes with LVDS Cable, Ribbon Cables, Power Switch Board and IR Remote if possible. The connector on the tconn board is an ffc, so you need a cable for that.
-- Connect your new HV430FHB-N10 mainboard to the Mirror via LVDS to the panel, and audio as well. 
-- Connect your device (pi, chromecast, etc) via HDMI.
-- Replace all screws, turn Mirror on, test, and configure!
+Watch the full video tutorial here: https://www.youtube.com/watch?v=9asyi3-GeVE
+
+### Step 1  
+<table style="padding:10px">
+  <tr>
+    <td>
+      <ul>
+        <li>First we have to remove what we don't need.</li>
+        <li>Use a Phillips head screwdriver to remove the 4 screws on the back of the Mirror (and the 4 securing the bottom stand, if used)</li>
+        <li>Unscrew the scalar board: TR10 - three screws connecting it to the plastic frame from the Mirror. Then, use a TR6 for five screws to remove the board from the plastic shield.</li>
+        <li>Disconnect the LVDS from the scalar board and the panel.</li>
+        <li>Disconnect the ethernet cable from the scalar board and remove it from the Mirror. We'll use that space below (next to the power insert) for any HDMI and USB cables we want access to instead.</li>
+          <li>Disconnect the audio from the scalar board as well. We'll connect them later to the new mainboard's speaker port for audio output.</li>
+        </ul> </td>
+   <td><video src="https://github.com/olm3ca/mirror/assets/76214954/d0547800-3915-4767-ba37-91380f252c7a" width="300" />
+</td>
+  </tr>
+</table>
+
+### Step 2
+<table style="padding:10px">
+  <tr>
+    <td>
+      <ul>
+        <li>Now we can start adding the hardware we want.</li>
+        <li>If you have a BOE panel, a quick search on eBay for "HV430FHB-N10" (https://bit.ly/420wajv) provides a lot of options for compatible mainboards. Note: you will want a mainboard that comes with LVDS Cable, Ribbon Cables, Power Switch Board and IR Remote if possible. The connector on the tconn board is an ffc, so you need a cable for that.</li>
+        <li>I ordered a compatible remote control from Amazon for about $5.</li>
+          <li>Add the mainboard panel by securing it to the panel with compatible screws.</li>
+        <li>Connect the LVDS cable to the panel.</li>
+        <li>If you discarded the camera in the previous step, you can place the IR receiver in that location so a remote control can communicate easily with the panel</li>
+       <li>The power button wire can fit through the small reset hole at the top of the Mirror, and you can secure the botton on top of the Mirror.</li> 
+        <li>The wifi antena for the new board should be secured to the side of the Mirror for best connectivity.</li>
+        <li>Replace the scalar board, it won't fit perfectly due to the size of the IR receiver, but two screws can keep it in place well enough.</li>
+        <li>The speakers will work if you use the speaker out port on the mainboard. You can re-use either the Left or Right audio connector from the scalar board, carefully trimming the sides so it will fit the mainboard port. Then, simply merge all of the audio cables so that black, red, orange and blue cables from the two speakers are propertly connected to the corresponding wires leading from the mainboard's speaker port.</li>
+        <li>All set - connect power and HDMI to test!</li>
+      </ul> </td>
+   <td><video src="https://github.com/olm3ca/mirror/assets/76214954/069c2d70-bf43-4219-8a2b-adcdac8a854e" width="300" />
+</td>
+  </tr>
+</table>
+
+### Step 3
+<table style="padding:10px">
+  <tr>
+    <td>
+      <ul>
+        <li>Finally, add the system you want your Smart Mirror to run.</li>
+        <li>If you get a Vizio mainboard like I did, the TV interface will be sideways - it's meant to be a TV, after all. But it's a smart TV with built-in Airplay, Miracast, and other functionality, which is helpful.</li>
+        <li>You can run HDMI, USB, and any other cables you need through the old ethernet port area on the bottom of the Mirror.</li>
+        <li>One option is to run Magic Mirror (https://magicmirror.builders) on a Raspberry Pi or equivalent device.</li>
+        <li>I found a Chromebook for $20 online and compared the specs to a Pi. Removing ChromeOS and putting Linux on it, we gutted the laptop and placed the motherboard, battery and power supply into the Mirror to run Magic Mirror.</li>
+          <li>Another option is to connect a computer externally via HDMI.</li>
+        <li>Route the cables, connect your system, and you may want to configure power to run through the main port at the base as we did, otherwise you'll have multiple power cords coming out the back of the Mirror.</li>
+      </ul> </td>
+   <td><video src="https://github.com/olm3ca/mirror/assets/76214954/dfaad6a7-8b25-484b-bdaf-21052e8a832c" width="300" />
+</td>
+  </tr>
+</table>
 
 
-### Other Mirrors
-(For other units with non-BOE panels.) We will need to circumvent the proprietary scalar board's LVDS connection by using a programmable TV board that is easily sourced online, and re-mapping the LVDS pins to reconfigure the Mirror's layout with our new board. 
+### Final Notes: 
 
-### How to Repin 
-This is a reference guide for how to go about discovering the LVDS pin layouts:
+Many other options are possible with the Mirror. Feel free to place suggestions in the issues section of this repo and I'll add them here. For those who do not have a BOE panel, it would be great to know what ideas you have to make your hardware work too.
 
-Now for a quick definition of terms so we're both speaking the same language. We'll refer to the following as...
-- the connector that attaches to the screen as "panel side" connector and the square connector as "Board side" connector or simply "the housing".
-- The twisted wires simply as "Twisted pairs"
-- The black wires as grounds (This is an assumption, will update if discovered to have a different purpose after your testing)
+For anyone looking to modify the scalar board in other ways beyond what has been accomplished, here are a few images I took of it:
 
-Now, On to the pin assignment. What we're looking for: we will reference the datasheet for the programmable TV board linked above, or any other model you are using.
 
-Where to start:
-- Take the panel side connector and hold it with the same side up as it is when it is inserted into the panel, so the gold side of the pins is facing toward you. (the cluster of 6 black wires will be on the right) going left to right from 1 to 51, use the multimeter set to continuity mode to figure out what pin positions on the panel side map to the pins on the housing side.
-- To keep us all on the same page, number the pins as such.
+| Scalar Board front | Scalar board LVDS | Scalar board back | 
+|------------|-------------|------------|
+|<img src="rev08/Scalar1.jpeg" width="300">| <img src="rev08/Scalar_2.jpeg" width="300">| <img src="rev08/Scalar_3.jpeg" width="300">|
 
-1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,51
 
-2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50
 
-- For the housing side, it should be viewed head on so you're staring right down the barrel of each pin, with the latch on the bottom. once again, the cluster of 6 black wires will be on the right.
-
-1,3,5,7,9,11,13,15,17,19,21,23,25,27,29
-
-2,4,6,8,10,12,14,16,18,20,22,24,26,28,30
-
-- The panel side connector is more challenging, I'd recommend taping a sewing needle to the end of your probe to give you that finer tip. once you've got those mapped out, hit me back with the findings so i can perform a sanity check to make sure everything looks good, and if we've found the datasheet for the driver board you purchased by then i'll provide a diagram for how to remap the housing!
-
-- Next, As far as the header housings go. it can be a challenge to try to move the pins around while some of the sockets are populated. It is advised to buy another housing so you can just move from one to the other. The best way to do this to ensure that the pins will fit is to read the side of your current housing to determine the manufacturer and model.
-
-For the Samsung panel, we will need to remap the pins accordingly:
-
-- For panel side 22, 23, 37 and 38: Note(3) Input mode 10bit setting & 8bit input E_Chanel : Keep Level ‘0’
-
-`Pin No 22 / 37 Pull Up(3.3V) with 1.5k ohm resistor`
-
-`Pin No 23 / 38 Pull Down(GND) with 1.5k ohm resistor`
-
-- For panel side pin 45: page 16 of the datasheet, it's signal description is "LVDS_SEL (2)" the paranthesis indicate which note applies. Note(2) LVDS Option :
-
-`High(3.3V) Normal NS LVDS format`
-`Low(GND or N.C) JEIDA LVDS format`
-
-The panel defaults to jeida, we need to set it to normal lvds (aka vesa). 
-
-### Accessories:
-Below are ideas of boards and other tools to consider for your Mirror project.
-
-- A programmable TV board such as [this model](https://www.ebay.com/itm/126199255216)
-- 3.3v regulators such as [this option](https://www.amazon.com/Pieces-AMS1117-3-3-4-75V-12V-Voltage-Regulator/dp/B08CDMZMDN/ref=sr_1_1_sspa). It is most likely that we are going to have to provide a 3.3v signal to a specific pin. sometimes the driver boards like the one you ordered provide a pin for such things, sometimes they don't. 
-- 1.5K ohm Resistors such as [this option](https://www.amazon.com/EDGELEC-Resistor-Tolerance-Multiple-Resistance/dp/B07QK3LHL9?th=1). we will need to add some resistors in line for 4 of the wires. you'll need at least 4 resistors. The important thing to look for is the tolerance which will be represented as a percentage. We need precision, so get 1% tolerance.
-
-END of current steps - progress ongoing... 
 
 
