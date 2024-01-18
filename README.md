@@ -53,7 +53,7 @@ There are several hardware revisions made to the Mirror.
 Other models of the Mirror have different panels: 
 
 -  Many users have a Samsung LTI400HN01 [full specs](https://www.panelook.com/LTI400HN01_Samsung_40_LCM_parameter_31646.html) and [datasheet](SMSNG41.pdf) connected via LVDS
--  Some users have the [LM40SAMFHD700AG25WV Panel](https://www.panelook.com/LM40SAMFHD700AG25WV-40-TFT-Liquid-Crystal-Display-module-with-LED-Backlight-unit-detail_155306.html) and [datasheet](https://www.panelook.com/upload/product/210800/202302093705.pdf)
+-  Some users have the [LM40SAMFHD700AG25WV Panel](https://www.panelook.com/LM40SAMFHD700AG25WV-40-TFT-Liquid-Crystal-Display-module-with-LED-Backlight-unit-detail_155306.html) and [datasheet](https://www.panelook.com/upload/product/210800/202302093705.pdf).  This panel is the replacement for [LTI400HN01](https://www.panelook.com/LTI400HN01_Samsung_40_LCM_parameter_31646.html). 
 - User r/themiggysmigs provided these photos: https://imgur.com/a/uST7AOL
 - RevP1 User r/AYfD6PsXcndUxSfobkM9 photos: https://imgur.com/a/bHYqefX | https://imgur.com/a/3JF6CdK | https://imgur.com/a/gHpoa2T
 
