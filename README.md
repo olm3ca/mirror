@@ -60,6 +60,8 @@ Other models of the Mirror have different panels:
 ## Method
 What you'll need: A Phillips head screwdriver, TR10 and TR6 screwdrivers, wire cutters, a replacement TV mainboard, and whatever device you want to control the new Mirror (such as a Rasperry Pi, chromecast, a computer, or anything else). 
 
+Optional, but helpful: [This remote](https://a.co/d/cIDJkZc) for initial setup as you'll want to connect the Vizio mainboard to wifi. After that, the Vizio phone app works well too. You will also need a power cord for the Vizio mainboard if you don't already have one, like [this](https://a.co/d/cN2QkGz).
+
 Watch the full video tutorial here: https://www.youtube.com/watch?v=9asyi3-GeVE
 
 ### Step 1  
