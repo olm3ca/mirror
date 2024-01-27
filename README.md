@@ -87,8 +87,8 @@ Watch the full video tutorial here: https://www.youtube.com/watch?v=9asyi3-GeVE
     <td>
       <ul>
         <li>Now we can start adding the hardware we want.</li>
-        <li>If you have a BOE panel, a quick search on eBay for "HV430FHB-N10" (https://bit.ly/420wajv) provides a lot of options for compatible mainboards. Note: you will want a mainboard that comes with LVDS Cable, Ribbon Cables, Power Switch Board and IR Remote if possible. The connector on the tconn board is an ffc, so you need a cable for that.</li>
-        <li>I ordered a compatible remote control from Amazon for about $5.</li>
+        <li>For the BOE panel, a quick search on eBay for "HV430FHB-N10" (https://bit.ly/420wajv) provides a lot of options for compatible mainboards. Note: you will want a mainboard that comes with LVDS Cable, Ribbon Cables, Power Switch Board and IR Remote if possible. (The LVDS connector on the tconn board is an ffc, this is why the Vizio mainboard LVDS cable is needed.)</li>
+            <li>You don't need the TCON board that comes with most mainboard kits as the one on the Mirror can remain in use.</li>
           <li>Add the mainboard panel by securing it to the panel with compatible screws.</li>
         <li>Connect the LVDS cable to the panel.</li>
         <li>If you discarded the camera in the previous step, you can place the IR receiver in that location so a remote control can communicate easily with the panel</li>
