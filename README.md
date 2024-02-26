@@ -5,7 +5,7 @@ The Lululemon Mirror is a two-way mirror with a display panel behind it, designe
 |------------|-------------|------------|
 |<img src="rev08/SmartMirror1.jpg" width="300">| <img src="rev08/SmartMirror2.jpg" width="300">| <img src="rev08/SmartMirror3.jpg" width="300">|
 
-UPDATE: Two models of the Mirror work now! The instructions below are mostly for the newer units (Rev08) with a BOE display. However, a recent discovery for the models with a LM40SAMFHD700AG25WV display means it will also work with this panel too. This guide explains how to add a standard TV mainboard into the Mirror to display whatever you want.
+UPDATE: Two models of the Mirror work now! The instructions below are mostly for the newer units (Rev08) with a BOE display. However, a recent discovery for the models with a LM40SAMFHD700AG25WV display means it will also work. This guide explains how to add a standard TV mainboard into the Mirror to display whatever you want.
 
 To check if your model is compatible, simply lay down your Mirror, unscrew the base (if used) and four screws on the back side. Lift up the metal case and look for BOE or LM40SAMFHD700AG25WV. For newer models with BOE panels, it will look like this: 
 
