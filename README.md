@@ -5,13 +5,13 @@ The Lululemon Mirror is a two-way mirror with a display panel behind it, designe
 |------------|-------------|------------|
 |<img src="rev08/SmartMirror1.jpg" width="300">| <img src="rev08/SmartMirror2.jpg" width="300">| <img src="rev08/SmartMirror3.jpg" width="300">|
 
-Note: If you have a newer model Mirror (my unit is Rev08, ordered November 2022), the good news is you may have a BOE display which is the same display used in many TVs from Vizio, ONN and Samsung. This guide is primarily dedicated to that model as it is very easy to place a TV mainboard into the Mirror to display whatever you want.
+UPDATE: Two models of the Mirror work now! The instructions below are mostly for the newer units (Rev08) with a BOE display. However, a recent discovery for the models with a LM40SAMFHD700AG25WV display means it will also work with this panel too. This guide explains how to add a standard TV mainboard into the Mirror to display whatever you want.
 
-To check, simply lay down your Mirror, unscrew the base (if used) and four screws on the back side. Lift up the metal case and look for BOE, as shown below where the red circle is:
+To check if your model is compatible, simply lay down your Mirror, unscrew the base (if used) and four screws on the back side. Lift up the metal case and look for BOE or LM40SAMFHD700AG25WV. For newer models with BOE panels, it will look like this: 
 
 <img src="Mirror.jpg" width="900">
 
-If your Mirror is a BOE display, read below for the solution we developed. If you have Samsung or any other display, the steps to work with your panel is still a work in progress - see [this](https://github.com/olm3ca/mirror/blob/main/Other%20models.md) for more details.
+If your Mirror has a compatible display, read below for the solution we developed. If you have Samsung or any other display, the steps to work with your panel is still a work in progress - see [this](https://github.com/olm3ca/mirror/blob/main/Other%20models.md) for more details.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Before you begin, 
@@ -50,17 +50,18 @@ There are several hardware revisions made to the Mirror.
 - Mine is Rev08, ordered November 2022. Photos uploaded to this repo are my own.
 - My Panel is a [BOE DV430FHM-NN5](https://www.panelook.com/DV430FHM-NN5_BOE_43_LCM_overview_48245.html) which is the same panel as this [HV430FHB-N10](https://www.panelook.com/HV430FHB-N10_BOE_43_CELL_overview_30568.html). The good news is, this panel is used in several TVs made by Vizio, ONN and Samsung.
 
+Another compatible model uses the [LM40SAMFHD700AG25WV Panel](https://www.panelook.com/LM40SAMFHD700AG25WV-40-TFT-Liquid-Crystal-Display-module-with-LED-Backlight-unit-detail_155306.html) and [datasheet](https://www.panelook.com/upload/product/210800/202302093705.pdf).  This panel is the replacement for [LTI400HN01](https://www.panelook.com/LTI400HN01_Samsung_40_LCM_parameter_31646.html). As noted in [Issue #8](https://github.com/olm3ca/mirror/issues/8) user avitascmor found a solution to use [this controller](https://ebay.us/HkicYV) to plug into the LVDS port. Follow all instructions below, but this is the new mainboard you will want to order.
+
 Other models of the Mirror have different panels: 
 
 -  Many users have a Samsung LTI400HN01 [full specs](https://www.panelook.com/LTI400HN01_Samsung_40_LCM_parameter_31646.html) and [datasheet](SMSNG41.pdf) connected via LVDS
--  Some users have the [LM40SAMFHD700AG25WV Panel](https://www.panelook.com/LM40SAMFHD700AG25WV-40-TFT-Liquid-Crystal-Display-module-with-LED-Backlight-unit-detail_155306.html) and [datasheet](https://www.panelook.com/upload/product/210800/202302093705.pdf).  This panel is the replacement for [LTI400HN01](https://www.panelook.com/LTI400HN01_Samsung_40_LCM_parameter_31646.html). 
 - User r/themiggysmigs provided these photos: https://imgur.com/a/uST7AOL
 - RevP1 User r/AYfD6PsXcndUxSfobkM9 photos: https://imgur.com/a/bHYqefX | https://imgur.com/a/3JF6CdK | https://imgur.com/a/gHpoa2T
 
 ## Method
 What you'll need: A Phillips head screwdriver, TR10 and TR6 screwdrivers, wire cutters, a replacement TV mainboard, and whatever device you want to control the new Mirror (such as a Rasperry Pi, chromecast, a computer, or anything else). 
 
-Optional, but helpful: [This remote](https://a.co/d/cIDJkZc) for initial setup as you'll want to connect the Vizio mainboard to wifi. After that, the Vizio phone app works well too. You will also need a power cord for the Vizio mainboard if you don't already have one, like [this](https://a.co/d/cN2QkGz).
+Optional, but helpful if you have a BOE panel: [This remote](https://a.co/d/cIDJkZc) for initial setup as you'll want to connect the Vizio mainboard to wifi. After that, the Vizio phone app works well too. You will also need a power cord for the Vizio mainboard if you don't already have one, like [this](https://a.co/d/cN2QkGz).
 
 Watch the full video tutorial here: https://www.youtube.com/watch?v=9asyi3-GeVE
 
