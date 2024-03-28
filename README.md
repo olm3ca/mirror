@@ -65,12 +65,13 @@ Optional, but helpful if you have a BOE panel: [This remote](https://a.co/d/cIDJ
 
 Watch the full video tutorial here: https://www.youtube.com/watch?v=9asyi3-GeVE
 
+Before you begin, make sure the Mirror is in initial setup mode (factory reset). This ensures the backlight stays on and doesn't time out after a few minutes of inactivity. On newer models with the BOE panel, hold down the little blue button at the top until it triggers a complete factory reset. On older models, one suggested method is to remove it from your network by either kicking it off from the router, changing the Wi-Fi password, or removing the RF cable connecting the Wi-Fi antenna to the mainboard (RF cable removal may be irreversible). 
+
 ### Step 1  
 <table style="padding:10px">
   <tr>
     <td>
       <ul>
-        <li>Make sure you have reset the Mirror so that it is in initial setup mode, otherwise the backlight will dim after a few minutes. With the scalar board on and wired up, hold down the little blue button at the top will trigger a factory reset.</li>
             <li>First we have to remove what we don't need.</li>
         <li>Use a Phillips head screwdriver to remove the 4 screws on the back of the Mirror (and the 4 securing the bottom stand, if used)</li>
         <li>Unscrew the scalar board: TR10 - three screws connecting it to the plastic frame from the Mirror. Then, use a TR6 for five screws to remove the board from the plastic shield.</li>
