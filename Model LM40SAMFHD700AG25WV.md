@@ -1,4 +1,4 @@
-## Instructions specific to Mirro with panel LM40SAMFHD700AG25WV
+## Instructions specific to panel LM40SAMFHD700AG25WV
 
 Initial work thanks to [@avitascmor](https://github.com/olm3ca/mirror/issues/8) 
 
