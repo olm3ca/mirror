@@ -1,6 +1,6 @@
-##Background 
+## Background 
 
-Initial work thanks to @avitascmor 
+Initial work thanks to [@avitascmor](https://github.com/olm3ca/mirror/issues/8) 
 
 These are notes compiled from other users in the Issues section for Mirrors with LM40SAMFHD700AG25WV panels. For more details, check the original issues such as #8 in particular for more in-depth discussion. 
 
@@ -14,14 +14,14 @@ Photos:
 
 https://imgur.com/gallery/e8AqDlA | With MagicMirror2 running on a Pi4 https://i.imgur.com/MrhZ6gI.jpeg
 
-##Reset mode to enable backlight: 
+## Reset mode to enable backlight: 
 
 1. Reset the Mirror to initial state through the app or by pressing the blue button if installed.
 2. If you cannot complete the above step and the Mirror is connected to Wi-Fi, remove it from your network by either kicking it off from the router, changing the Wi-Fi password, or removing the RF cable connecting the Wi-Fi antenna to the mainboard (RF cable removal may be irreversible).
 
 ## More detailed build instructions: 
 
-Build notes thanks to @jeremy-fields
+Build notes thanks to [@jeremy-fields](https://github.com/olm3ca/mirror/issues/10)
 
 I pulled out the original microphone board, usb access, video board, and speaker amplifier. I installed the [new board](https://www.ebay.com/itm/166580220209?siteid=0&customid=lululemon&toolid=20012) from eBay, a Raspberry Pi 4, and some connectors. I left the camera board and lens installed to prevent an obvious hole visible from the front (could also tape it off but this was easy). I also left the Power Supply and Backlight Inverter in place.
 
