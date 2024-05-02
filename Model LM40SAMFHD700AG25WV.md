@@ -2,7 +2,7 @@
 
 Initial work thanks to [@avitascmor](https://github.com/olm3ca/mirror/issues/8) 
 
-These are notes compiled from other users in the Issues section for Mirrors with LM40SAMFHD700AG25WV panels. For more details, check the original issues such as #8 in particular for more in-depth discussion. 
+These are notes compiled from other users in the Issues section for Mirrors with LM40SAMFHD700AG25WV panels. For more details, read Issues [#8](https://github.com/olm3ca/mirror/issues/8) and [#10](https://github.com/olm3ca/mirror/issues/10) for more in-depth discussion. 
 
 Here is the [technical manual](https://m.panelook.cn/LM40SAMFHD700AG25WV-40-TFT-Liquid-Crystal-Display-module-with-LED-Backlight-unit-detail_155306.html)
 
