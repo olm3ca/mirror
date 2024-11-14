@@ -6,7 +6,7 @@ These are notes compiled from other users in the Issues section for Mirrors with
 
 Here is the [technical manual](https://m.panelook.cn/LM40SAMFHD700AG25WV-40-TFT-Liquid-Crystal-Display-module-with-LED-Backlight-unit-detail_155306.html)
 
-This model requires a specific cable and controller: https://ebay.us/HkicYV
+This model requires a specific cable and [this controller](https://www.ebay.com/itm/166580220209?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=JMDajnaISMG&sssrc=2047675&ssuid=-kZm7FqJTmi&widget_ver=artemis&media=COPY)
 
 This controller and cable set work and provide VGA, DVI and HDMI inputs for a Pi, Laptop, etc.  One solution is to replace the LVDS cable and let the rest of the screen remain powered by design.
 
