@@ -46,7 +46,43 @@ What we don't need:
 -  The scalar board (with hdmi, usb and the antennas) would require reverse engineering the bios, which is very challenging. It will continue to work for the backlight and other minor functionality only. 
 
 ## Hardware Versions
-There are several hardware revisions made to the Mirror. 
+There are several hardware revisions made to the Mirror. Thanks to @vkasabrukhau for adding much more detail to this historical section below:
+
+This meant to be a mirror shopping guide and market advisory for those who are looking to gauge what this may cost like.
+To understand what screen models went into what we must lay out the timeline:
+
+September 2018 - The company “Mirror” starts shipping smart fitness mirrors
+October/November 2019 - Mirror closes $34m Series B round, Lululemon participates via $1m, Lululemon content introduced to the mirror
+July 2020 - Lululemon acquires “Mirror”
+September 2022 - Lululemon explicitly rebrands “Mirror” to “Lululemon Studio Mirror”
+Late 2023 - Lululemon discontinues new hardware sales of the Mirror, partners with Peloton for content
+
+2018 - 2020 - $1,495
+2021 - $1,195 – $995
+October 2022 - $795
+Late 2023 - Discontinued
+
+Came packaged with 3 models of display:
+
+BOE DV430FHM-NN5 - 43”
+Samsung-Celled LM40SAMFHD700AG25WV - 40”, 1920x1080, 700 nit, AG25 (anti-glare, 25% haze), WV (wide view) - it is quite likely that Lululemon sourced these from Display Logic and the panels themselves were built with the same Samsung cells from LTI400HN01
+Samsung LTI400HN01 - 40”, 1920×1080, 700 nit, 4000:1 contrast, 16.7M colors at 72% NTSC, WLED backlight, 8ms g2g, matte with 25% haze, and LVDS 2ch 8-bit over 51 pins at 12V via Panelook
+In around 2022 (lining up with the rebrand) online marketing made a switch from describing the screen panel as being “40” to “43” indicating a full shift from both of the Samsung panels to the BOE panel. Some online marketing such as Lululemon Canada remained stale and stayed on a 40” description.
+
+I have been able to get my hands on 2 mirrors - one bought in October 2022 and another bought in 2021. Both have BOE panels that were manufactured in 2021. The screen’s manufactured date is usually engraved on the outer casing of the LVDS port on the back of the display.
+TYPICALLY if a mirror was bought in late 2021 or soon thereafter it is a relatively safe bet that it will contain a BOE panel but THIS IS NOT GUARANTEED.
+The easiest way to distinguish these in the case of a Craigslist/Facebook Marketplace purchase is via date and by measuring in place outright. Ask to see the mirror, check dimensions with a measuring tape directly. 3 inches is enough runway to test. 43” - BOE, 40” - Samsung or Other
+In the case that the panel is Samsung its ease of modification is a toss up. The two boards - LM40SAMFHD700AG25WV and LTI400HN01 are direct replacements of each other different pin outs and might require more low level work.
+
+LTI400HN01 seems to be the problem child - a working solution theory is described in Issue #24 of this repo
+LM40SAMFHD700AG25WV has been largely solved for and is effectively the same as the BOE panel in terms of practical repair
+
+In regard to price it is up to each person’s discretion how much they are willing to pay for a mirror. In my experience of surfing Facebook Marketplace nonstop people who bought the mirror later on in it’s lifecycle are more willing to sell for less (less of a discernible loss). Prices online range from $400+ all the way down to $50/$70 and in my case one was obtained for free.
+
+I would highly recommend not getting buyers anxiety and feeling pressured to snag the first 2022+ mirror for whatever price. Depending on the seller these are often obtainable for right around the $100 mark. The older the mirror the higher the risk of a difficult panel and hence the lower the price. $200+ typically tends to not make sense due to risk carried by the panel inside as well as accommodating components. Hardware to get custom display working tends to be around $30-$60 depending on which panel you get and the controller/TV board you choose to put inside. Compute that needs to work inside is another cost worth weighing depending on the kind of software/onboard processing you’d like it to run.
+
+All in all for $100-$200 with the right board the mirror is a decent deal if worked out for the market price of the casing, the screen inside, the speakers it comes with, and the quality of the mirror itself.
+
 - Mine is Rev08, ordered November 2022. Photos uploaded to this repo are my own.
 - My Panel is a [BOE DV430FHM-NN5](https://www.panelook.com/DV430FHM-NN5_BOE_43_LCM_overview_48245.html) which is the same panel as this [HV430FHB-N10](https://www.panelook.com/HV430FHB-N10_BOE_43_CELL_overview_30568.html). The good news is, this panel is used in several TVs made by Vizio, ONN and Samsung.
 
